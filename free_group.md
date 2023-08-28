@@ -17,11 +17,12 @@ $$
 A &= X \cup Y\\
 &= \left( \bigcup_{x \in X} \lbrace I(x) \rbrace \right) \cup \left( \bigcup_{x \in X} \lbrace J(x) \rbrace \right)\\
 &= \bigcup_{x \in X} \lbrace I(x), J(x) \rbrace,
+\end{align*}
 $$
 
 elements of which we call **characters**.
 
-The **Kleene star** of $$A$ is
+The **Kleene star** of $A$ is
 
 $$
 A^* = \bigcup_{n \geq 0} A^n.
