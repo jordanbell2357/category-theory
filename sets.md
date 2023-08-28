@@ -2,8 +2,6 @@
 
 Paul R. Halmos. *Naive Set Theory*. Van Nostrand Reinhold Company. 1960.
 
-{:toc}
-
 ## Section 1, "The Axiom of Extension" {#section1}
 
 p. 2:
@@ -37,7 +35,7 @@ p. 9:
 
 p. 10:
 
-> If a is a set, we may form the unordered pair $\{a, a\}$. That unordered pair is
+> If a is a set, we may form the unordered pair $\lbracea, a\rbrace$. That unordered pair is
 > denoted by $\lbrace a \rbrace$ and is called the *singleton* of $a$; it is uniquely characterized by
 > the statement that it has $a$ as its only element. Thus, for instance, $\emptyset$ and $\lbrace \emptyset \rbrace$
 > are very different sets; the former has no elements, whereas the latter has
@@ -67,25 +65,25 @@ p. 23:
 > The *ordered pair* of $a$ and $b$, with *first coordinate* $a$ and *second coordinate* $b$, is the set 
 > $(a,b)$ defined by
 >
-> $(a,b) = \{\{a\},\{a,b\}\}.$
+> $(a,b) = \lbrace\lbracea\rbrace,\lbracea,b\rbrace\rbrace.$
 >
 > However convincing the motivation of this definition may be, we must still prove
 > that the result has the main property that an ordered pair must have to deserve its
 > name. We must show that if $(a, b)$ and $(x, y)$ are ordered pairs and if
 > $(a,b)=(x,y)$, 
 > then $a = x$ and $b = y$. To prove this, we note first that if $a$ and $b$ happen to be equal,
-> then the ordered pair $(a,b)$ is the same as the singleton $\{\{a\}\}$. If, conversely, $(a, b)$
-> is a singleton, then $\{a\}=\{a,b\}$, so that $b \in \{a\}$, and therefore $a=b$. Suppose
+> then the ordered pair $(a,b)$ is the same as the singleton $\lbrace\lbracea\rbrace\rbrace$. If, conversely, $(a, b)$
+> is a singleton, then $\lbracea\rbrace=\lbracea,b\rbrace$, so that $b \in \lbracea\rbrace$, and therefore $a=b$. Suppose
 > now that $(a,b)=(x,y)$. If $a = b$, then both $(a, b)$ and $(x, y)$ are singletons, so that
-> $x = y$; since $\{x\} \in (a,b)$ and $\{a\} \in (x,y)$, it follows that
+> $x = y$; since $\lbracex\rbrace \in (a,b)$ and $\lbracea\rbrace \in (x,y)$, it follows that
 > $a$, $b$, $x$, and $y$ are all equal.
-> If $a \neq b$, then both $(a, b)$ and $(x, y)$ contain exactly one singleton, namely $\{a\}$ and
-> $\{x\}$ respectively, so that $a = x$. Since in this case it is also true that both $(a, b)$
+> If $a \neq b$, then both $(a, b)$ and $(x, y)$ contain exactly one singleton, namely $\lbracea\rbrace$ and
+> $\lbracex\rbrace$ respectively, so that $a = x$. Since in this case it is also true that both $(a, b)$
 > and $(x, y)$ contain exactly one unordered pair that is not a singleton,
-> namely $\{a, b\}$
-> and $\{x, y\}$ respectively, it follows that $\{a,b\}=\{x,y\}$, and therefore,
+> namely $\lbracea, b\rbrace$
+> and $\lbracex, y\rbrace$ respectively, it follows that $\lbracea,b\rbrace=\lbracex,y\rbrace$, and therefore,
 > in particular,
-> $b \in \{x,y\}$. Since $b$ cannot be $x$ (for then we should have $a = x$
+> $b \in \lbracex,y\rbrace$. Since $b$ cannot be $x$ (for then we should have $a = x$
 > and $b = x$, and,
 > therefore, $a = b$), we must have $b = y$, and the proof is complete.
 
@@ -93,10 +91,10 @@ pp. 23-24:
 
 > If $A$ and $B$ are sets, does there exist a set that contains all the ordered pairs $(a,b)$ with $a$ in
 > $A$ and $b$ in $B$? It is quite easy to see that the
-> answer is yes. Indeed, if $a \in A$ and $b \in B$, then $\{a\} \subset A$
-> and $\{b\} \subset B$, and therefore $\{a,b\} \subset A \cup B$. Since also
-> $\{a\} \subset A \cup B$, it follows that both $\{a\}$ and $\{a,b\}$ are
-> elements of $\mathscr{P}(A \cup B)$. This implies that $\{\{a\},\{a,b\}\}$
+> answer is yes. Indeed, if $a \in A$ and $b \in B$, then $\lbracea\rbrace \subset A$
+> and $\lbraceb\rbrace \subset B$, and therefore $\lbracea,b\rbrace \subset A \cup B$. Since also
+> $\lbracea\rbrace \subset A \cup B$, it follows that both $\lbracea\rbrace$ and $\lbracea,b\rbrace$ are
+> elements of $\mathscr{P}(A \cup B)$. This implies that $\lbrace\lbracea\rbrace,\lbracea,b\rbrace\rbrace$
 > is a subset of $\mathscr{P}(A \cup B)$, and hence that it is an element of
 > $\mathscr{P}(\mathscr{P}(A \cup B))$; in other words $(a,b) \in \mathscr{P}(\mathscr{P}(A \cup B))$
 > whenever $a \in A$ and $b \in B$. Once this is known, it is a routine matter to apply the axiom of
@@ -104,7 +102,7 @@ pp. 23-24:
 > of the ordered pairs $(a,b)$ with $a$ in $A$ and $b$ in $B$. This set is called the
 > *Cartesian product* of $A$ and $B$; it is characterized by the fact that
 >
-> $A \times B = \{x : x=(a,b) \; \textrm{for some} \; a \; \textrm{in} \; A \; \textrm{and for some} \; b \; \textrm{in} \; B\}.$
+> $A \times B = \lbracex : x=(a,b) \; \textrm{for some} \; a \; \textrm{in} \; A \; \textrm{and for some} \; b \; \textrm{in} \; B\rbrace.$
 
 p. 25:
 
@@ -146,11 +144,11 @@ p.27:
 > In the theory of relations these sets are known as the *domain* and the *range* of $R$
 > (abbreviated dom $R$ and ran $R$); we recall that they are defined by
 >
-> $\textrm{dom} R = \{x :  \textrm{for some} \; y \; (x R y)\}$
+> $\textrm{dom} R = \lbracex :  \textrm{for some} \; y \; (x R y)\rbrace$
 >
 > and
 >
-> $\textrm{ran} R = \{y: \textrm{for some} \; x \; (x R y)\}.$
+> $\textrm{ran} R = \lbracey: \textrm{for some} \; x \; (x R y)\rbrace.$
 
 p. 27:
 
@@ -197,7 +195,7 @@ pp. 38-39:
 > $\mathscr{P}(Y)$ to $\mathscr{P}(X)$ such
 > that if $B \subset Y$, then
 >
-> $f^{-1}(B) = \{x \in X: f(x) \in B\}.$
+> $f^{-1}(B) = \lbracex \in X: f(x) \in B\rbrace.$
 >
 > In words: $f^{-1}(B)$ consists of exactly those elements of X that $f$ maps into $Y$;
 > the set $f^{-1}(B)$ is called the *inverse image* of $B$ under $f$.
@@ -315,7 +313,7 @@ $
 
 ## $X = \emptyset, Y \neq \emptyset, Z \neq \emptyset$
 
-$Y^X=\{\emptyset\}$
+$Y^X=\lbrace\emptyset\rbrace$
 
 $
 \circ_{X,Y,Z}(\emptyset,g) = \emptyset, \quad g \in Z^Y.
