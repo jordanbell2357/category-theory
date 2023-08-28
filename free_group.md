@@ -2,4 +2,4 @@
 
 Let $X$ be a set.
 
-If $X \neq \emptyset$, let $I_X = \bigsqcup_{x \in X} \{I_x\}$.
+If $X \neq \emptyset$, let $I_X = \bigsqcup_{x \in X} \lbrace I_x \rbrace$.
