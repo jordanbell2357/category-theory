@@ -2,4 +2,4 @@
 
 Let $X$ be a set.
 
-Let $F(X)$
+If $X \neq \emptyset$, let $I_X = \bigsqcup_{x \in X} \{I_x\}$.
