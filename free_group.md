@@ -35,7 +35,7 @@ $$
 If $a_i a_{i+1} = I(x)J(x)$ or $a_i a_{i+1} = J(x)I(x)$ for some $x \in X$, call
 
 $$
-a_1 \cdots a_{i-1} a_i a_{i+1} a_{i+2} \cdots a_n \rightarrow a_1 \cdots a_{i-1} a_{i+2} \cdots a_n 
+a_1 \cdots a_{i-1} a_i a_{i+1} a_{i+2} \cdots a_n \longrightarrow a_1 \cdots a_{i-1} a_{i+2} \cdots a_n 
 $$
 
 a reduction.
