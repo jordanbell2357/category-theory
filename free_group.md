@@ -1,35 +1,59 @@
 # Free group on a set
 
+## Words
+
 Let $X$ be a set, $X \neq \emptyset$.
 
 If $X \neq \emptyset$,
-define $I:X \to X$ for $x \in X$ by $I(x)=x$.
+for $x \in X$ define $I(x)=x$.
 
 Let $Y$ be a set disjoint from $X$ for
 which there is a bijection $J:X \to Y$.
 
-For $x \in X$, write $x^{-1} = J(x)$. 
-
 Let
 
 $$
-L = X \cup Y = \bigcup_{x \in X} \lbrace I(x), J(x) \rbrace = \bigcup_{x \in X} \lbrace x, x^{-1} \rbrace,
+A = X \cup Y = \bigcup_{x \in X} \lbrace I(x), J(x) \rbrace = \bigcup_{x \in X} \lbrace x, x^{-1} \rbrace,
 $$
 
 elements of which we call characters.
 
-Let $a \in L^+$, a string comprised of one or more characters from $L$. For some $n \geq 1$, $a \in L^n$:
+Elements of $A^*$ are called words over the set $X$.
 
 $$
-a = a_1 \cdots a_n, \qquad a_i \in L, 1 \leq i \leq n.
+A^0 = \lbrace \epsilon \rbrace
 $$
 
-If $a_i a_{i+1} = I(x)J(x)$ or $a_i a_{i+1} = J(x)I(x)$, call
+Say $a$ is a word over the set $X$ that is not the empty word $\epsilon$.
+
+For some $n \geq 1$, let $a \in A^n$, thus
 
 $$
-a_1 \codts a_{i-1} a_i a_{i+1} a_{i+2} \cdots a_n \to a_1 \cdots a_{i-1} a_{i+2} \cdots a_n 
+a = a_1 \cdots a_n, \qquad a_i \in A, 1 \leq i \leq n.
+$$
+
+If $a_i a_{i+1} = I(x)J(x)$ or $a_i a_{i+1} = J(x)I(x)$ for some $x \in X$, call
+
+$$
+a_1 \cdots a_{i-1} a_i a_{i+1} a_{i+2} \cdots a_n \to a_1 \cdots a_{i-1} a_{i+2} \cdots a_n 
 $$
 
 a reduction.
 
-If $a \in L^+$ has no reductions, it is called reduced.
+If a word $a$ has no reductions, it is called reduced.
+
+For $x \in X$, write $x^{-1} = J(x)$.
+
+## Free group on a set
+
+
+
+
+## Universal property
+
+
+
+
+
+## Category theory
+
