@@ -1,6 +1,6 @@
 # Free group on a set
 
-## Words
+## Words over a set
 
 Let $X$ be a set.
 
@@ -61,6 +61,29 @@ If a word $a$ has no reductions, it is called a **reduced word**. [^2]
 [^2]: <https://arbital.com/p/freely_reduced_word/>
 
 Let $W_R(X)$ be the set of reduced words over $X$.
+
+## Symmetric group on a set
+Let $S(X)$ be the set of bijections $X \to X$.
+
+### $X = \emptyset$
+
+$$S(\emptyset) = \lbrace \emptyset \rbrace$$
+
+[^5]
+
+[^5]: <https://arbital.com/p/empty_set_universal_property/>
+
+### $X \neq \emptyset$
+
+For $\sigma, \tau \in S(X)$, define
+
+$$
+(\sigma \tau)(x) = (\sigma \circ \tau)(x) = \sigma(\tau(x)),\qquad x \in X.
+$$
+
+$\mathrm{id}_X(x)=x$ is the identity element of $S(X)$.
+
+We call $S(X)$ the **symmetric group on the set** $X$.
 
 ## Free group on a set
 
