@@ -29,9 +29,11 @@ In other words, in the above $S(x)$ is a **predicate**.
 
 > If $a$ is a set, we may form the unordered pair $\lbrace a, a \rbrace$. That unordered pair is
 > denoted by $\lbrace a \rbrace$ and is called the *singleton* of $a$; it is uniquely characterized by
-> the statement that it has $a$ as its only element. Thus, for instance, $\emptyset$ and $\lbrace \emptyset \rbrace$
-> are very different sets; the former has no elements, whereas the latter has
-> the unique element $\emptyset$. To say that $a \in A$ is equivalent to saying that $\lbrace a \rbrace \subset A$.
+> the statement that it has $a$ as its only element. Thus, for instance,
+> $\emptyset$ and $\lbrace \emptyset \rbrace$ are very different sets;
+> the former has no elements, whereas the latter has
+> the unique element $\emptyset$. To say that $a \in A$ is equivalent to saying that
+> $\lbrace a \rbrace \subset A$.
 
 ## Section 4, "Unions and Intersections"
 
@@ -56,10 +58,11 @@ the subsets of $A$.
 > However convincing the motivation of this definition may be, we must still prove
 > that the result has the main property that an ordered pair must have to deserve its
 > name. We must show that if $(a, b)$ and $(x, y)$ are ordered pairs and if
-> $(a,b)=(x,y)$, 
-> then $a = x$ and $b = y$. To prove this, we note first that if $a$ and $b$ happen to be equal,
-> then the ordered pair $(a,b)$ is the same as the singleton $\lbrace\lbrace a\rbrace\rbrace$. If, conversely, $(a, b)$
-> is a singleton, then $\lbrace a\rbrace=\lbrace a,b\rbrace$, so that $b \in \lbrace a\rbrace$, and therefore $a=b$. Suppose
+> $(a,b)=(x,y)$, then $a = x$ and $b = y$. To prove this, we note first that if
+> $a$ and $b$ happen to be equal, then the ordered pair $(a,b)$ is the same as the singleton
+> $\lbrace\lbrace a\rbrace\rbrace$. If, conversely, $(a, b)$
+> is a singleton, then $\lbrace a\rbrace=\lbrace a,b\rbrace$, so that $b \in \lbrace a\rbrace$,
+> and therefore $a=b$. Suppose
 > now that $(a,b)=(x,y)$. If $a = b$, then both $(a, b)$ and $(x, y)$ are singletons, so that
 > $x = y$; since $\lbrace x\rbrace \in (a,b)$ and $\lbrace a\rbrace \in (x,y)$, it follows that
 > $a$, $b$, $x$, and $y$ are all equal.
@@ -108,7 +111,8 @@ the subsets of $A$.
 > The precise set-theoretic treatment of relations takes advantage of that heuristic
 > connection; the simplest thing to do is to define a relation to be the corresponding
 > set. This is what we do; we hereby define a *relation* as a set of ordered pairs.
-> Explicitly: a set $R$ is a relation if each element of $R$ is an ordered pair; this means, of course, that if
+> Explicitly: a set $R$ is a relation if each element of $R$ is an ordered pair;
+> this means, of course, that if
 > $z \in R$, then there exist $x$ and $y$ so that $z=(x,y)$. If $R$ is a relation, it is sometimes
 > convenient to express the fact that $(x,y) \in R$ by writing
 >
@@ -123,12 +127,11 @@ p.27:
 > In the theory of relations these sets are known as the *domain* and the *range* of $R$
 > (abbreviated dom $R$ and ran $R$); we recall that they are defined by
 >
-> $\textrm{dom} R = \lbrace x :  \exists y \; (x R y)\rbrace$
+> $\textrm{dom} R = \lbrace x :  \textrm{for some} \; y \; (x R y)\rbrace$
 >
 > and
 >
-> $\textrm{ran} R = \lbrace y: \exists x \; (x R y)\rbrace.$
-
+> $\textrm{ran} R = \lbrace y: \textrm{for some} \; x \; (x R y)\rbrace.$
 
 > If $R$ is a relation included in a Cartesian product $X \times Y$
 > (so that $\textrm{dom} R \subset X$ and $\textrm{ran} R \subset Y$),
@@ -153,6 +156,7 @@ p.27:
 > The set of all functions from $X$ to $Y$ is a subset of the power set
 > $\mathscr{P}(X \times Y)$; it will be denoted by $Y^X$.
 
+
 > *Exercise.* (i) $Y^\emptyset$ has exactly one element, namely $\emptyset$,
 > whether $Y$ is empty or not, and (ii) if $X$ is not empty, then $\emptyset^X$
 > is empty.
@@ -167,7 +171,7 @@ p.27:
 > $\mathscr{P}(Y)$ to $\mathscr{P}(X)$ such
 > that if $B \subset Y$, then
 >
-> $f^{-1}(B) = \lbrace x \in X: f(x) \in B\rbrace.$
+> $f^{-1}(B) = \lbracex \in X: f(x) \in B\rbrace.$
 >
 > In words: $f^{-1}(B)$ consists of exactly those elements of X that $f$ maps into $Y$;
 > the set $f^{-1}(B)$ is called the *inverse image* of $B$ under $f$.
@@ -183,7 +187,6 @@ p.27:
 > $f^{-1}(y)=x$ if and only if $f(x) = y$. This use of the notation is
 > mildly inconsistent with our first interpretation of $f^{-1}$, but the double
 > meaning is not likely to lead to any confusion.
-
 
 > The discussion of inverses shows that what a function does can in a certain sense be undone;
 > the next thing we shall see is that what two functions
@@ -207,7 +210,8 @@ p.27:
 > Functional composition may not be commutative, but it is always
 > associative. If $f$ maps $X$ into $Y$, if $g$ maps $Y$ into $Z$, and if
 > $h$ maps $Z$ into $U$, then we can form the composite of $h$ with $gf$
-> and the composite of $hg$ with $f$; it is a simple exercise to show that the result is the same in either case.
+> and the composite of $hg$ with $f$; it is a simple exercise to show that
+> the result is the same in either case.
 >
 > The connection between inversion and composition is important; 
 > something like it crops up all over mathematics. If $f$ maps $X$ into $Y$
@@ -218,7 +222,7 @@ p.27:
 > $g(f(x)) \in C$, so that $f(x) \in g^{-1}(C)$, and therefore
 > $x \in f^{-1}(g^{-1}(C))$; the steps of the argument are reversible.
 
-# Categories
+## Categories
 
 A category **C** comprises the following data: [^1] [^2]
 
@@ -231,11 +235,9 @@ A category **C** comprises the following data: [^1] [^2]
 2. For each pair of objects $X,Y$, a class of **morphisms** $\textrm{hom}_{\mathbf{C}}(X,Y)$. A morphism $f \in \textrm{hom}_{\mathbf{C}}(X,Y)$ has **domain** $\textrm{dom}(f)=X$ and **codomain** $\textrm{cod}(f)=Y$.
 
 3. For each triple of objects $X,Y,Z$, a map
-$
-\begin{equation}
+$$
 \circ_{X,Y,Z}:\textrm{hom}_{\mathbf{C}}(X,Y) \times \textrm{hom}_{\mathbf{C}}(Y,Z) \to \textrm{hom}_{\mathbf{C}}(X,Z)
-\end{equation}
-$
+$$
 called **composition** and denoted by $\circ_{X,Y,Z}:(f,g) \mapsto g \circ f$. [^3]
 
 4. For each object $X$, a morphism $\textrm{id}_X \in \textrm{hom}_{\mathbf{C}}(X,X)$, called the **identity morphism**.
@@ -250,9 +252,9 @@ The data has to satisfy the following rules:
 
 3. For each triple of morphisms $f,g,h$, if
 $\textrm{cod}(f)=\textrm{dom}(g)$ and $\textrm{cod}(g)=\textrm{dom}(h)$ then  
-$
+$$
 h \circ (g \circ f) = (h \circ g) \circ f,
-$
+$$
 called the **associative law**. [^5]
 
 [^4]: [identity element in nLab](https://ncatlab.org/nlab/show/identity+element)
@@ -266,7 +268,7 @@ $\textrm{Obj}(\mathbf{Set})$ is the class of sets.
 For each pair of sets $X,Y$, the class of morphisms
 $\textrm{hom}_{\mathbf{Set}}(X,Y)$ is the set of functions $Y^X$. [^small]
 
-[Halmos, Section 8, "Functions"](#section8):
+Halmos, Section 8, "Functions":
 
 > $Y^\emptyset$ has exactly one element, namely $\emptyset$,
 > whether $Y$ is empty or not, and (ii) if $X$ is not empty, then $\emptyset^X$
@@ -278,17 +280,17 @@ $\circ_{X,Y,Z}:Y^X \times Z^Z \to Z^X$
 
 ### $X \neq \emptyset, Y \neq \emptyset, Z \neq \emptyset$
 
-$
+$$
 \circ_{X,Y,Z}(f,g)(x) = g(f(x)),\quad f \in Y^X, g \in Z^Y, \quad x \in X.
-$
+$$
 
 ### $X = \emptyset, Y \neq \emptyset, Z \neq \emptyset$
 
 $Y^X=\lbrace\emptyset\rbrace$
 
-$
+$$
 \circ_{X,Y,Z}(\emptyset,g) = \emptyset, \quad g \in Z^Y.
-$
+$$
 
 ### $X \neq \emptyset, Y = \emptyset, Z \neq \emptyset$
 
@@ -316,17 +318,15 @@ $
 
 For each set $X$ that is not empty, the identity morphism $\textrm{id}_X \in X^X$ is
 
-$
+$$
 \textrm{id}_X(x) = x, \quad x \in X.
-$
+$$
 
 When $X$ is empty,
 
-$
+$$
 \mathrm{id}_\emptyset = \emptyset \in \emptyset^\emptyset.
-$
-
-
+$$
 
 [^small]: When for each pair of objects $X,Y$ it holds that the class of morphisms $\textrm{hom}_{\mathbf{C}}(X,Y)$ is a **set**, the category **C** is called **locally small**. See [locally small category in nLab](https://ncatlab.org/nlab/show/locally+small+category)
     
