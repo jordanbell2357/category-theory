@@ -90,7 +90,7 @@ the subsets of $A$.
 > of the ordered pairs $(a,b)$ with $a$ in $A$ and $b$ in $B$. This set is called the
 > *Cartesian product* of $A$ and $B$; it is characterized by the fact that
 >
-> $A \times B = \lbrace x : x=(a,b) \textrm{for some } a \textrm{ in } A \textrm{ and for some } b \textrm{ in } B\rbrace.$
+> $A \times B = \lbrace x : x=(a,b) \textrm{ for some } a \textrm{ in } A \textrm{ and for some } b \textrm{ in } B\rbrace.$
 
 > The charge of artificiality is true, but it is not too high a price to pay for conceptual economy. The concept of an ordered pair could have been introduced as an
 > additional primitive, axiomatically endowed with just the right properties, no more
@@ -152,7 +152,7 @@ the subsets of $A$.
 >
 > $f:X \to Y$
 >
-> is sometimes used as an abbreviation for `"$f$ is a function from $X$ to $Y$."
+> is sometimes used as an abbreviation for "*f* is a function from $X$ to $Y$."
 > The set of all functions from $X$ to $Y$ is a subset of the power set
 > $\mathscr{P}(X \times Y)$; it will be denoted by $Y^X$.
 
