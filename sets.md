@@ -90,7 +90,7 @@ the subsets of $A$.
 > of the ordered pairs $(a,b)$ with $a$ in $A$ and $b$ in $B$. This set is called the
 > *Cartesian product* of $A$ and $B$; it is characterized by the fact that
 >
-> $A \times B = \lbrace x : x=(a,b) \; \textrm{for some} \; a \; \textrm{in} \; A \; \textrm{and for some} \; b \; \textrm{in} \; B\rbrace.$
+> $A \times B = \lbrace x : x=(a,b) \textrm{for some} a \textrm{in} A \textrm{and for some} b \textrm{in} B\rbrace.$
 
 > The charge of artificiality is true, but it is not too high a price to pay for conceptual economy. The concept of an ordered pair could have been introduced as an
 > additional primitive, axiomatically endowed with just the right properties, no more
@@ -127,11 +127,11 @@ the subsets of $A$.
 > In the theory of relations these sets are known as the *domain* and the *range* of $R$
 > (abbreviated dom $R$ and ran $R$); we recall that they are defined by
 >
-> $\textrm{dom} R = \lbrace x :  \textrm{for some} \; y \; (x R y)\rbrace$
+> $\textrm{dom} R = \lbrace x :  \textrm{for some} y (x R y)\rbrace$
 >
 > and
 >
-> $\textrm{ran} R = \lbrace y: \textrm{for some} \; x \; (x R y)\rbrace.$
+> $\textrm{ran} R = \lbrace y: \textrm{for some}  x (x R y)\rbrace.$
 
 > If $R$ is a relation included in a Cartesian product $X \times Y$
 > (so that $\textrm{dom} R \subset X$ and $\textrm{ran} R \subset Y$),
