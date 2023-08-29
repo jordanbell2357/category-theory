@@ -152,7 +152,7 @@ p.27:
 >
 > $f:X \to Y$
 >
-> is sometimes used as an abbreviation for "$f$ is a function from $X$ to $Y$."
+> is sometimes used as an abbreviation for \"$f$ is a function from $X$ to $Y$.\"
 > The set of all functions from $X$ to $Y$ is a subset of the power set
 > $\mathscr{P}(X \times Y)$; it will be denoted by $Y^X$.
 
@@ -171,7 +171,7 @@ p.27:
 > $\mathscr{P}(Y)$ to $\mathscr{P}(X)$ such
 > that if $B \subset Y$, then
 >
-> $f^{-1}(B) = \lbracex \in X: f(x) \in B\rbrace.$
+> $f^{-1}(B) = \lbrace x \in X: f(x) \in B\rbrace.$
 >
 > In words: $f^{-1}(B)$ consists of exactly those elements of X that $f$ maps into $Y$;
 > the set $f^{-1}(B)$ is called the *inverse image* of $B$ under $f$.
@@ -232,7 +232,9 @@ A category **C** comprises the following data: [^1] [^2]
 
 1. A class of **objects** $\textrm{Obj}(\mathbf{C})$.
 
-2. For each pair of objects $X,Y$, a class of **morphisms** $\textrm{hom}_{\mathbf{C}}(X,Y)$. A morphism $f \in \textrm{hom}_{\mathbf{C}}(X,Y)$ has **domain** $\textrm{dom}(f)=X$ and **codomain** $\textrm{cod}(f)=Y$.
+2. For each pair of objects $X,Y$, a class of **morphisms**
+$\mathrm{hom}_{\mathbf{C}}(X,Y)$.
+A morphism $f \in \textrm{hom}_{\mathbf{C}}(X,Y)$ has **domain** $\textrm{dom}(f)=X$ and **codomain** $\textrm{cod}(f)=Y$.
 
 3. For each triple of objects $X,Y,Z$, a map
 $$
