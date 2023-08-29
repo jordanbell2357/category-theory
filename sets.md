@@ -120,7 +120,7 @@ the subsets of $A$.
 >
 > and saying, as in everyday language, that $x$ stands in the relation $R$ to $y$.
 
-p.27:
+
 
 > In the preceding section we saw that associated with every set $R$ of ordered pairs
 > there are two sets called the projections of $R$ onto the first and second coordinates.
@@ -233,8 +233,8 @@ A category **C** comprises the following data: [^1] [^2]
 1. A class of **objects** $\textrm{Obj}(\mathbf{C})$.
 
 2. For each pair of objects $X,Y$, a class of **morphisms**
-$\mathrm{hom}_{\mathbf{C}}(X,Y)$.
-A morphism $f \in \textrm{hom}_{\mathbf{C}}(X,Y)$ has **domain** $\textrm{dom}(f)=X$ and **codomain** $\textrm{cod}(f)=Y$.
+$$\mathrm{hom}_{\mathbf{C}}(X,Y)$$.
+A morphism $$f \in \textrm{hom}_{\mathbf{C}}(X,Y)$$ has **domain** $\textrm{dom}(f)=X$ and **codomain** $\textrm{cod}(f)=Y$.
 
 3. For each triple of objects $X,Y,Z$, a map
 $$
