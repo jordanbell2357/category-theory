@@ -152,7 +152,7 @@ the subsets of $A$.
 >
 > $f:X \to Y$
 >
-> is sometimes used as an abbreviation for "```math f``` is a function from $X$ to $Y$."
+> is sometimes used as an abbreviation for "`$f`$ is a function from $X$ to $Y$."
 > The set of all functions from $X$ to $Y$ is a subset of the power set
 > $\mathscr{P}(X \times Y)$; it will be denoted by $Y^X$.
 
@@ -246,7 +246,7 @@ called **composition** and denoted by $\circ_{X,Y,Z}:(f,g) \mapsto g \circ f$. [
 
 4. For each object $X$, a morphism
 ```math
-\textrm{id}_X \in \textrm{hom}_{\mathbf{C}}(X,X)$,
+\textrm{id}_X \in \textrm{hom}_{\mathbf{C}}(X,X),
 ```
 called the **identity morphism**.
 
