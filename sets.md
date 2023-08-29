@@ -162,6 +162,12 @@ the subsets of $A$.
 > whether $Y$ is empty or not, and (ii) if $X$ is not empty, then $\emptyset^X$
 > is empty.
 
+### ∅
+
+[^arbital]
+
+[^arbital]: [Universal property of the empty set \| Arbital](https://arbital.com/p/empty_set_universal_property/)
+
 ## Section 10, "Inverses and Composites"
 
 > A correspondence between the elements of $X$ and the elements of $Y$
