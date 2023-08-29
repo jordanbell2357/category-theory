@@ -4,13 +4,9 @@ Paul R. Halmos. *Naive Set Theory*. Van Nostrand Reinhold Company. 1960.
 
 ## Section 1, "The Axiom of Extension"
 
-p. 2:
-
 > **Axiom of extension.** Two sets are equal if and only if they have the same elements.
 
 ## Section 2, "The Axiom of Specification"
-
-p. 6:
 
 > **Axiom of specification.** To every set $A$ and to every condition $S(x)$
 > there corresponds a set $B$ whose elements are exactly those elements $x$ of
@@ -29,13 +25,9 @@ In other words, in the above $S(x)$ is a **predicate**.
 
 ## Section 3, "Unordered Pairs"
 
-p. 9:
-
 > **Axiom of pairing.** For any two sets there exists a set that they both belong to.
 
-p. 10:
-
-> If a is a set, we may form the unordered pair $\lbracea, a\rbrace$. That unordered pair is
+> If $a$ is a set, we may form the unordered pair $\lbrace a, a \rbrace$. That unordered pair is
 > denoted by $\lbrace a \rbrace$ and is called the *singleton* of $a$; it is uniquely characterized by
 > the statement that it has $a$ as its only element. Thus, for instance, $\emptyset$ and $\lbrace \emptyset \rbrace$
 > are very different sets; the former has no elements, whereas the latter has
@@ -43,14 +35,10 @@ p. 10:
 
 ## Section 4, "Unions and Intersections"
 
-p. 12:
-
 > **Axiom of unions.** For every collection of sets there exists a set that contains
 > all the elements that belong to at least one set of the given collection.
 
 ## Section 5, "Complements and Powers"
-
-p. 19:
 
 > **Axiom of powers.** For each set there exists a collection of sets that contains
 > among its elements all the subsets of the given set.
@@ -60,41 +48,38 @@ the subsets of $A$.
 
 ## Section 6, "Ordered Pairs"
 
-p. 23:
-
 > The *ordered pair* of $a$ and $b$, with *first coordinate* $a$ and *second coordinate* $b$, is the set 
 > $(a,b)$ defined by
 >
-> $(a,b) = \lbrace\lbracea\rbrace,\lbracea,b\rbrace\rbrace.$
+> $(a,b) = \lbrace\lbrace a\rbrace,\lbrace a,b\rbrace\rbrace.$
 >
 > However convincing the motivation of this definition may be, we must still prove
 > that the result has the main property that an ordered pair must have to deserve its
 > name. We must show that if $(a, b)$ and $(x, y)$ are ordered pairs and if
 > $(a,b)=(x,y)$, 
 > then $a = x$ and $b = y$. To prove this, we note first that if $a$ and $b$ happen to be equal,
-> then the ordered pair $(a,b)$ is the same as the singleton $\lbrace\lbracea\rbrace\rbrace$. If, conversely, $(a, b)$
-> is a singleton, then $\lbracea\rbrace=\lbracea,b\rbrace$, so that $b \in \lbracea\rbrace$, and therefore $a=b$. Suppose
+> then the ordered pair $(a,b)$ is the same as the singleton $\lbrace\lbrace a\rbrace\rbrace$. If, conversely, $(a, b)$
+> is a singleton, then $\lbrace a\rbrace=\lbrace a,b\rbrace$, so that $b \in \lbrace a\rbrace$, and therefore $a=b$. Suppose
 > now that $(a,b)=(x,y)$. If $a = b$, then both $(a, b)$ and $(x, y)$ are singletons, so that
-> $x = y$; since $\lbracex\rbrace \in (a,b)$ and $\lbracea\rbrace \in (x,y)$, it follows that
+> $x = y$; since $\lbrace x\rbrace \in (a,b)$ and $\lbrace a\rbrace \in (x,y)$, it follows that
 > $a$, $b$, $x$, and $y$ are all equal.
-> If $a \neq b$, then both $(a, b)$ and $(x, y)$ contain exactly one singleton, namely $\lbracea\rbrace$ and
-> $\lbracex\rbrace$ respectively, so that $a = x$. Since in this case it is also true that both $(a, b)$
+> If $a \neq b$, then both $(a, b)$ and $(x, y)$ contain exactly one singleton, namely $\lbrace a\rbrace$ and
+> $\lbrace x\rbrace$ respectively, so that $a = x$. Since in this case it is also true that both $(a, b)$
 > and $(x, y)$ contain exactly one unordered pair that is not a singleton,
-> namely $\lbracea, b\rbrace$
-> and $\lbracex, y\rbrace$ respectively, it follows that $\lbracea,b\rbrace=\lbracex,y\rbrace$, and therefore,
+> namely $\lbrace a, b\rbrace$
+> and $\lbrace x, y\rbrace$ respectively, it follows that $\lbrace a,b\rbrace=\lbrace x,y\rbrace$, and therefore,
 > in particular,
-> $b \in \lbracex,y\rbrace$. Since $b$ cannot be $x$ (for then we should have $a = x$
+> $b \in \lbrace x,y\rbrace$. Since $b$ cannot be $x$ (for then we should have $a = x$
 > and $b = x$, and,
 > therefore, $a = b$), we must have $b = y$, and the proof is complete.
 
-pp. 23-24:
 
 > If $A$ and $B$ are sets, does there exist a set that contains all the ordered pairs $(a,b)$ with $a$ in
 > $A$ and $b$ in $B$? It is quite easy to see that the
-> answer is yes. Indeed, if $a \in A$ and $b \in B$, then $\lbracea\rbrace \subset A$
-> and $\lbraceb\rbrace \subset B$, and therefore $\lbracea,b\rbrace \subset A \cup B$. Since also
-> $\lbracea\rbrace \subset A \cup B$, it follows that both $\lbracea\rbrace$ and $\lbracea,b\rbrace$ are
-> elements of $\mathscr{P}(A \cup B)$. This implies that $\lbrace\lbracea\rbrace,\lbracea,b\rbrace\rbrace$
+> answer is yes. Indeed, if $a \in A$ and $b \in B$, then $\lbrace a\rbrace \subset A$
+> and $\lbrace b\rbrace \subset B$, and therefore $\lbrace a,b\rbrace \subset A \cup B$. Since also
+> $\lbrace a\rbrace \subset A \cup B$, it follows that both $\lbrace a\rbrace$ and $\lbrace a,b\rbrace$ are
+> elements of $\mathscr{P}(A \cup B)$. This implies that $\lbrace\lbrace a\rbrace,\lbrace a,b\rbrace\rbrace$
 > is a subset of $\mathscr{P}(A \cup B)$, and hence that it is an element of
 > $\mathscr{P}(\mathscr{P}(A \cup B))$; in other words $(a,b) \in \mathscr{P}(\mathscr{P}(A \cup B))$
 > whenever $a \in A$ and $b \in B$. Once this is known, it is a routine matter to apply the axiom of
@@ -102,9 +87,7 @@ pp. 23-24:
 > of the ordered pairs $(a,b)$ with $a$ in $A$ and $b$ in $B$. This set is called the
 > *Cartesian product* of $A$ and $B$; it is characterized by the fact that
 >
-> $A \times B = \lbracex : x=(a,b) \; \textrm{for some} \; a \; \textrm{in} \; A \; \textrm{and for some} \; b \; \textrm{in} \; B\rbrace.$
-
-p. 25:
+> $A \times B = \lbrace x : x=(a,b) \; \textrm{for some} \; a \; \textrm{in} \; A \; \textrm{and for some} \; b \; \textrm{in} \; B\rbrace.$
 
 > The charge of artificiality is true, but it is not too high a price to pay for conceptual economy. The concept of an ordered pair could have been introduced as an
 > additional primitive, axiomatically endowed with just the right properties, no more
@@ -113,16 +96,12 @@ p. 25:
 > the choice is pretty clearly a matter of taste. Similar choices occur frequently in
 > mathematics; in this book, for instance, we shall encounter them again in connection with the definitions of numbers of various kinds.
 
-p. 25:
-
 > *Exercise.* If either $A=\emptyset$ or $B=\emptyset$, then
 > $A \times B = \emptyset$, and conversely. If $A \subset X$ and
 > $B \subset Y$, then $A \times B \subset X \times Y$, and (provided
 > $A \times B \neq \emptyset$) conversely.
 
 ## Section 7, "Relations"
-
-pp. 26-27:
 
 > We may not know what a relation is, but we do know what a set is, and the
 > preceding considerations establish a close connection between relations and sets.
@@ -144,13 +123,12 @@ p.27:
 > In the theory of relations these sets are known as the *domain* and the *range* of $R$
 > (abbreviated dom $R$ and ran $R$); we recall that they are defined by
 >
-> $\textrm{dom} R = \lbracex :  \textrm{for some} \; y \; (x R y)\rbrace$
+> $\textrm{dom} R = \lbrace x :  \exists y \; (x R y)\rbrace$
 >
 > and
 >
-> $\textrm{ran} R = \lbracey: \textrm{for some} \; x \; (x R y)\rbrace.$
+> $\textrm{ran} R = \lbrace y: \exists x \; (x R y)\rbrace.$
 
-p. 27:
 
 > If $R$ is a relation included in a Cartesian product $X \times Y$
 > (so that $\textrm{dom} R \subset X$ and $\textrm{ran} R \subset Y$),
@@ -158,8 +136,6 @@ p. 27:
 > instead of a relation from $X$ to $X$ we may speak of a relation *in* $X$.
 
 ## Section 8, "Functions"
-
-p. 30:
 
 > If $X$ and $Y$ are sets, a *function from* (or *on*) $X$ *to* (or *into*) $Y$ is a relation $f$ such
 > that $\textrm{dom} f = X$ and such that for each $x$ in $X$ there is a unique element $y$ in $Y$ with
@@ -177,15 +153,11 @@ p. 30:
 > The set of all functions from $X$ to $Y$ is a subset of the power set
 > $\mathscr{P}(X \times Y)$; it will be denoted by $Y^X$.
 
-p. 33:
-
 > *Exercise.* (i) $Y^\emptyset$ has exactly one element, namely $\emptyset$,
 > whether $Y$ is empty or not, and (ii) if $X$ is not empty, then $\emptyset^X$
 > is empty.
 
 ## Section 10, "Inverses and Composites"
-
-pp. 38-39:
 
 > A correspondence between the elements of $X$ and the elements of $Y$
 > does always induce a well-behaved correspondence between the subsets of
@@ -195,7 +167,7 @@ pp. 38-39:
 > $\mathscr{P}(Y)$ to $\mathscr{P}(X)$ such
 > that if $B \subset Y$, then
 >
-> $f^{-1}(B) = \lbracex \in X: f(x) \in B\rbrace.$
+> $f^{-1}(B) = \lbrace x \in X: f(x) \in B\rbrace.$
 >
 > In words: $f^{-1}(B)$ consists of exactly those elements of X that $f$ maps into $Y$;
 > the set $f^{-1}(B)$ is called the *inverse image* of $B$ under $f$.
@@ -212,7 +184,6 @@ pp. 38-39:
 > mildly inconsistent with our first interpretation of $f^{-1}$, but the double
 > meaning is not likely to lead to any confusion.
 
-pp. 39-40:
 
 > The discussion of inverses shows that what a function does can in a certain sense be undone;
 > the next thing we shall see is that what two functions
@@ -247,7 +218,7 @@ pp. 39-40:
 > $g(f(x)) \in C$, so that $f(x) \in g^{-1}(C)$, and therefore
 > $x \in f^{-1}(g^{-1}(C))$; the steps of the argument are reversible.
 
-## Categories
+# Categories
 
 A category **C** comprises the following data: [^1] [^2]
 
