@@ -152,7 +152,7 @@ the subsets of $A$.
 >
 > $f:X \to Y$
 >
-> is sometimes used as an abbreviation for " $f$ is a function from $X$ to $Y$."
+> is sometimes used as an abbreviation for "\$f\$ is a function from $X$ to $Y$."
 > The set of all functions from $X$ to $Y$ is a subset of the power set
 > $\mathscr{P}(X \times Y)$; it will be denoted by $Y^X$.
 
@@ -239,9 +239,9 @@ A category **C** comprises the following data: [^1] [^2]
 A morphism $$f \in \textrm{hom}_{\mathbf{C}}(X,Y)$$ has **domain** $\textrm{dom}(f)=X$ and **codomain** $\textrm{cod}(f)=Y$.
 
 3. For each triple of objects $X,Y,Z$, a map
-$$
+```math
 \circ_{X,Y,Z}:\textrm{hom}_{\mathbf{C}}(X,Y) \times \textrm{hom}_{\mathbf{C}}(Y,Z) \to \textrm{hom}_{\mathbf{C}}(X,Z)
-$$
+```
 called **composition** and denoted by $\circ_{X,Y,Z}:(f,g) \mapsto g \circ f$. [^3]
 
 4. For each object $X$, a morphism $\textrm{id}_X \in \textrm{hom}_{\mathbf{C}}(X,X)$, called the **identity morphism**.
