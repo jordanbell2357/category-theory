@@ -152,7 +152,7 @@ the subsets of $A$.
 >
 > $f:X \to Y$
 >
-> is sometimes used as an abbreviation for “$f$ is a function from $X$ to $Y$.”
+> is sometimes used as an abbreviation for "{}$f$ is a function from $X$ to $Y$."
 > The set of all functions from $X$ to $Y$ is a subset of the power set
 > $\mathscr{P}(X \times Y)$; it will be denoted by $Y^X$.
 
