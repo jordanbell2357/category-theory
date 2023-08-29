@@ -244,7 +244,11 @@ A morphism $$f \in \textrm{hom}_{\mathbf{C}}(X,Y)$$ has **domain** $\textrm{dom}
 ```
 called **composition** and denoted by $\circ_{X,Y,Z}:(f,g) \mapsto g \circ f$. [^3]
 
-4. For each object $X$, a morphism $\textrm{id}_X \in \textrm{hom}_{\mathbf{C}}(X,X)$, called the **identity morphism**.
+4. For each object $X$, a morphism
+```math
+\textrm{id}_X \in \textrm{hom}_{\mathbf{C}}(X,X)$,
+```
+called the **identity morphism**.
 
 [^3]: [composition in nLab](https://ncatlab.org/nlab/show/composition)
 
@@ -256,9 +260,9 @@ The data has to satisfy the following rules:
 
 3. For each triple of morphisms $f,g,h$, if
 $\textrm{cod}(f)=\textrm{dom}(g)$ and $\textrm{cod}(g)=\textrm{dom}(h)$ then  
-$$
+```math
 h \circ (g \circ f) = (h \circ g) \circ f,
-$$
+```
 called the **associative law**. [^5]
 
 [^4]: [identity element in nLab](https://ncatlab.org/nlab/show/identity+element)
