@@ -168,6 +168,27 @@ the subsets of $A$.
 
 [^arbital]: [Universal property of the empty set \| Arbital](https://arbital.com/p/empty_set_universal_property/)
 
+#### Theorem
+
+For any set $Y$, $Y^\emptyset=\lbrace \emptyset \rbrace$.
+
+#### Proof
+
+A function $f:\emptyset \to Y$ is a relation (set of ordered pairs) such that $\mathrm{dom}(\emptyset) = \emptyset$ and such that for each $x$ in $\emptyset$ there is a unique element $y$ in $Y$ with
+$(x,y) \in \emptyset$.
+Vacuously, all elements of $\emptyset$ are ordered pairs so $\emptyset$ is a relation.
+$\mathrm{dom}(\emptyset) = \emptyset$.
+Vacuously, for each $x$ in $\emptyset$ there is a unique element $y$ in $Y$ with
+$(x,y) \in \emptyset$. Therefore, 
+$\emptyset \in Y^\emptyset$.
+
+Suppose by contradiction there is some $f \in Y^\emptyset$, $f \neq \emptyset$.
+Since $f \neq \emptyset$, it follows that
+there is some $x \in \emptyset$ and some $y \in Y$ such that
+$(x,y) \in f$ and $(x,y) \not \in \emptyset$.
+But $\emptyset$ has no elements, which is a contradiction.
+Therefore, if $f \in Y^\emptyset$ then $f = \emptyset$. □
+
 ## Section 10, "Inverses and Composites"
 
 > A correspondence between the elements of $X$ and the elements of $Y$
