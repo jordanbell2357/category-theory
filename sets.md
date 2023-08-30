@@ -164,10 +164,6 @@ the subsets of $A$.
 
 ### ∅
 
-[^arbital]
-
-[^arbital]: [Universal property of the empty set \| Arbital](https://arbital.com/p/empty_set_universal_property/)
-
 #### Theorem
 
 For any set $Y$, $Y^\emptyset=\lbrace \emptyset \rbrace$.
@@ -188,6 +184,14 @@ there is some $x \in \emptyset$ and some $y \in Y$ such that
 $(x,y) \in f$ and $(x,y) \not \in \emptyset$.
 But $\emptyset$ has no elements, which is a contradiction.
 Therefore, if $f \in Y^\emptyset$ then $f = \emptyset$. □
+
+[^arbital]
+
+[^arbital]: [Universal property of the empty set \| Arbital](https://arbital.com/p/empty_set_universal_property/)
+
+#### Theorem: Universal property of the empty set
+
+#### Proof
 
 ## Section 10, "Inverses and Composites"
 
