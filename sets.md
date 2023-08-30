@@ -185,7 +185,7 @@ Therefore, if $f \in Y^\emptyset$ then $f = \emptyset$. □
 
 [^arbital]
 
-[^arbital]: [Universal property of the empty set \| Arbital](https://arbital.com/p/empty_set_universal_property/)
+[^arbital]: [Universal property of the empty set - Arbital](https://arbital.com/p/empty_set_universal_property/)
 
 #### Theorem (Universal property of the empty set)
 
